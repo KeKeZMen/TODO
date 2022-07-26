@@ -1,0 +1,159 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: 'Montserrat';
+    outline: none;
+}
+
+body {
+    background-color: #121212;
+}
+
+button {
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+    background-color: inherit;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.window {
+    background-color: #1E1E1E;
+    padding: 15px 30px 30px;
+    border-radius: 10px;
+}
+
+.window h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.task-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.created {
+    text-align: left;
+    margin-right: 30px;
+}
+
+.completed {
+    text-align: right;
+}
+
+.tasks {
+    margin-top: 25px;
+    width: 320px;
+    height: 288px;
+    overflow-y: auto;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.task p {
+    flex: 1;
+    max-width: 250px;
+    word-wrap: break-word;
+}
+
+.done{
+    color:#7D7D7D;
+    text-decoration:line-through;
+}
+
+.task:hover > .btn-delete {
+    background: url("img/inactive-trash.svg") no-repeat center;
+    background-size: 20px 20px;
+}
+
+.btn-unsuccess {
+    border-radius: 41px;
+    background: url("img/inactive-completed.svg") no-repeat center;
+    width: 25px;
+    height: 25px;
+    transition: 0.4s;
+    margin-right: 20px;
+}
+
+.btn-success {
+    background: url("img/active-completed.svg") no-repeat center;
+    width: 25px;
+    height: 25px;
+    transition: 0.4s;
+    margin-right: 20px;
+    border-radius: 41px;
+}
+
+.btn-delete {
+    background: url("img/inactive-trash.svg") no-repeat center;
+    background-size: 0 0;
+    transition: 0.4s;
+    width: 20px;
+    height: 20px;
+}
+
+.btn-delete:hover {
+    background: url("img/active-trash.svg") no-repeat center !important;
+}
+
+.task-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-input {
+    background-color: #121212;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70%;
+}
+
+.btn-add {
+    background-image: url("img/inactive-add.svg");
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.btn-add:hover {
+    background: url("img/active-add.svg");
+    box-shadow: 0 0 9px rgba(0, 209, 21, 0.56);
+}
+
+.swal-modal{
+    background-color: #1E1E1E;
+}
+
+.swal-text{
+    color: #fff;
+}
+
+.swal-title{
+    color: #fff;
+}
